@@ -104,7 +104,7 @@ func main() {
 	// Setup Server //
 	srv := &http.Server{
 		Handler: router,
-		Addr:    "127.0.0.1:9090",
+		Addr:    ":9090",
 		// Good practice: enforce timeouts for servers you create!
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
